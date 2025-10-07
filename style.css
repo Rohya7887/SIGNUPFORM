@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.left {
+  flex: 1;
+  background: linear-gradient(rgba(185, 63, 169, 0.7), rgba(185, 63, 169, 0.7)), 
+              url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1') no-repeat center center/cover;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-box{
+    width: 350px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.form-box h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+.form-box .checkbox {
+    margin: 12px 0;
+    font-size: 14px;
+}
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff5f95, #ff00cc);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+   opacity: 0.9;
+}
+
+.form-box .signin{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
